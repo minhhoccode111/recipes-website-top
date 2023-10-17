@@ -8,6 +8,45 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="wrapper font-sans">
+      <header
+        id="header"
+        class="fixed left-0 right-0 top-0 z-50 flex items-center justify-between bg-white px-8 py-2 shadow-lg"
+      >
+        <a class="cursor-pointer capitalize underline hover:no-underline">
+          menu
+        </a>
+        <a class="cursor-pointer text-2xl font-bold text-orange-600">
+          allrecipes
+        </a>
+        <div class="header-right capitalize">
+          <a
+            href="#"
+            class="header-search border-r border-gray-400 pr-3 underline hover:no-underline"
+            >search</a
+          >
+          <a class="header-login cursor-pointer pl-3 hover:underline">login</a>
+        </div>
+      </header>
+      <nav
+        id="nav"
+        class="mb-4 mt-16 flex items-center px-8 font-bold uppercase"
+      >
+        <p class="text-sm">main dishes</p>
+        <p class="px-4 text-gray-600">></p>
+        <p class="text-sm">pasta</p>
+        <p class="px-4 text-gray-600">></p>
+        <p class="text-sm">lasagna recipes</p>
+        <p class="px-4 text-gray-600">></p>
+        <p class="text-sm">meat lasagna recipes</p>
+      </nav>
+      <main id="main" class="px-8 py-4">
+        <header id="main-header" class="">
+          <h2 class="text-3xl font-extrabold">World's Best Lasagna</h2>
+        </header>
+        <nav id="main-nav" class=""></nav>
+      </main>
+      <footer id="footer" class=""></footer>
+    </div>
   </body>
 </html>
