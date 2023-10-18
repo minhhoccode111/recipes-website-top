@@ -11,3 +11,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.text-2xs {
+  font-size: 6px;
+}
+
+li > span.text-2xs {
+  transform: translate(-150%, 60%) scale(0.75);
+}
+
+li > strong {
+  cursor: pointer;
+}
