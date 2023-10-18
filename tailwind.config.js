@@ -3,9 +3,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
-    container: {
-      center: true,
+    extend: {
+      width: {
+        96: "520px",
+      },
     },
   },
   plugins: [],

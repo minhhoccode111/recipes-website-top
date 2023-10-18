@@ -6,3 +6,8 @@
 .click-text:hover {
   border-bottom-width: 2px;
 }
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
