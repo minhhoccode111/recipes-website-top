@@ -1,0 +1,8 @@
+.click-text {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  cursor: pointer;
+}
+.click-text:hover {
+  border-bottom-width: 2px;
+}
