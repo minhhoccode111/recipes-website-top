@@ -1,12 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin recipes website</title>
+    <link rel="stylesheet" href="./output.css" />
   <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
   <body>
-    <div class="container"></div>
+    <div class="wrapper font-sans">
+      <header
+        id="header"
+        class="fixed left-0 right-0 top-0 z-50 flex items-center justify-between bg-white px-8 py-3.5 shadow-lg"
+      >
+        <a
+          href="#"
+          class="cursor-pointer capitalize underline hover:no-underline focus:no-underline"
+        >
+          menu
+        </a>
+        <a
+          href="#"
+          class="cursor-pointer text-3xl font-extrabold text-orange-600"
+        >
+          allrecipes
+        </a>
+        <div class="header-right capitalize">
+          <a
+            href="#"
+            class="header-search border-r border-gray-400 pr-3 underline hover:no-underline focus:no-underline"
+            >search</a
+          >
+          <a
+            href="#"
+            class="header-login cursor-pointer pl-3 hover:underline focus:underline"
+            >login</a
+          >
+        </div>
+      </header>
+      <nav
+        id="nav"
+        class="mb-4 mt-24 flex items-center px-8 font-bold uppercase"
+      >
+        <a href="#" class="text-sm">main dishes</a>
+        <p class="px-4 text-gray-600">></p>
+        <a href="#" class="text-sm">pasta</a>
+        <p class="px-4 text-gray-600">></p>
+        <a href="#" class="text-sm">lasagna recipes</a>
+        <p class="px-4 text-gray-600">></p>
+        <a href="#" class="text-sm">meat lasagna recipes</a>
+      </nav>
+      <main id="main" class="px-8 py-4">
+        <header id="main-header" class="my-3">
+          <h2 class="text-5xl font-extrabold">World's Best Lasagna</h2>
+        </header>
+        <nav id="main-nav" class="py-2 text-xs uppercase">
+          <a class="mr-2 cursor-pointer">⭐⭐⭐⭐⭐</a>
+          <strong class="click-text border-orange-500 tracking-wide">
+            <a href="#" class=""> 4.8 </a>
+          </strong>
+          <span class="font-bold text-gray-500">(20,299)</span>
+          <span class="mx-3 border-l border-gray-300"></span>
+          <strong class="click-text border-orange-500 tracking-wide">
+            <a href="#" class=""> 14,493 reviews </a>
+          </strong>
+          <span class="mx-3 border-l border-gray-300"></span>
+          <strong class="click-text border-orange-500 tracking-wide">
+            <a href="#" class=""> 2,696 photos </a>
+          </strong>
+        </nav>
+        <p class="py-2 text-lg">
+          This lasagna recipe takes a little work, but it is so satisfying and
+          filling that it's worth it!
+        </p>
+        <article class="w-96">
+          <p class="py-1 text-sm capitalize">
+            recipe by
+            <strong class="click-text border-orange-500 capitalize">
+              <a href="#" class=""> John Chandler </a>
+            </strong>
+            <span class="mx-3 border-l border-gray-300"></span>
+            <span class="capitalize text-gray-500"
+              >updated on August 16, 2023</span
+            >
+          </p>
+          <p class="py-1 text-sm">
+            <span> 🧪 </span>
+            <span class="capitalize">tested by </span>
+            <strong class="click-text border-orange-500 capitalize">
+              <a href="#" class=""> Allrecipes Test Kitchen </a>
+            </strong>
+          </p>
+          <div
+            class="my-2 grid h-12 grid-cols-4 rounded bg-lime-200 capitalize"
+          >
+            <div
+              class="center h-full rounded-l bg-orange-500 font-bold text-white"
+            >
+              <span
+                class="mr-1 cursor-pointer border-white hover:border-b focus:border-b"
+              >
+                <a href="#" class=""> save </a>
+              </span>
+              <span class="">❤️</span>
+            </div>
+            <div class="center font-bold">
+              <span
+                class="mr-1 cursor-pointer border-orange-500 hover:border-b focus:border-b"
+              >
+                <a href="#" class=""> rate </a>
+              </span>
+              <span class=""> ⭐ </span>
+            </div>
+            <div
+              class="center self-center border-l border-r border-gray-700 font-bold"
+            >
+              <span
+                class="mr-1 cursor-pointer border-orange-500 hover:border-b focus:border-b"
+              >
+                <a href="#" class=""> print </a>
+              </span>
+              <span> 🖨️ </span>
+            </div>
+            <div class="center font-bold">
+              <span
+                class="mr-1 cursor-pointer border-orange-500 hover:border-b focus:border-b"
+              >
+                <a href="#" class=""> share </a>
+              </span>
+              <span> ↗️ </span>
+            </div>
+          </div>
+          <div class="my-10 bg-lime-200 p-4">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="">
+                <p class="font-bold capitalize">prep time:</p>
+                <p class="">30 mins</p>
+              </div>
+              <div class="">
+                <p class="font-bold capitalize">cook time:</p>
+                <p class="">2hrs 30 mins</p>
+              </div>
+              <div class="">
+                <p class="font-bold capitalize">additional time:</p>
+                <p class="">15 mins</p>
+              </div>
+              <div class="">
+                <p class="font-bold capitalize">total time:</p>
+                <p class="">3 hrs 15 mins</p>
+              </div>
+              <div class="">
+                <p class="font-bold capitalize">servings:</p>
+                <p class="">12</p>
+              </div>
+              <div class="">
+                <p class="font-bold capitalize"></p>
+                <p class=""></p>
+              </div>
+            </div>
+            <p class="my-5 border-b border-gray-400"></p>
+            <span class="click-text border-orange-500">
+              <a href="#" class=""> Jump to Nutrition Facts </a>
+            </span>
+          </div>
+          <div class="">
+            <p class="">
+              When
+              <a
+                href="#"
+                class="click-text border-blue-500 capitalize text-blue-500"
+                >john chandler</a
+              >
+              submitted this lasagna recipe to Allrecipes more than 20 years
+              ago, he had no idea how successful it would become. One of our
+              top-performing recipes of all time,
+              <span class="capitalize">world's best lasagna</span>
+              racks up more than 7 millions views per year and has ranked among
+              the most popular lasagna recipes on the internet for two decades.
+              Unfortunately, John unexpectedly passed away at 53 years old --
+              <a href="#" class="click-text border-blue-500 text-blue-500"
+                >read all about his life and legacy here</a
+              >.
+            </p>
+          </div>
+          <figure class="">
+            <img src="/src/assets/lasagna.png" alt="World's best Lasagna " class="">
+          </img>
+          <figcaption class="uppercase text-xs text-gray-400">photo: allrecipes magazine</figcaption>
+          </figure>
+        </article>
+      </main>
+      <footer id="footer" class=""></footer>
+    </div>
   </body>
 </html>
