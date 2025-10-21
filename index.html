@@ -7,178 +7,183 @@
     <title>Odin recipes website</title>
     <link rel="stylesheet" href="./output.css" />
   <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
-  <body class="">
-    <div class="wrapper font-sans">
+  <body class="bg-gray-50">
+    <div class="wrapper flex min-h-screen flex-col font-sans">
       <header
         id="header"
-        class="fixed left-0 right-0 top-0 z-50 flex items-center justify-between bg-white px-8 py-3.5 shadow-lg"
+        class="fixed left-0 right-0 top-0 z-50 flex items-center justify-between bg-white px-8 py-4 shadow-md"
       >
         <a
           href="#"
-          class="cursor-pointer capitalize underline hover:no-underline focus:no-underline"
+          class="cursor-pointer text-gray-700 transition-colors duration-200 hover:text-orange-600"
         >
-          menu
+          Menu
         </a>
         <a
           href="#"
-          class="cursor-pointer text-3xl font-extrabold text-orange-600"
+          class="cursor-pointer text-4xl font-extrabold text-orange-600 transition-colors duration-200 hover:text-orange-700"
         >
           allrecipes
         </a>
-        <div class="header-right capitalize">
+        <div class="header-right flex items-center space-x-4">
           <a
             href="#"
-            class="header-search border-r border-gray-400 pr-3 underline hover:no-underline focus:no-underline"
-            >search</a
+            class="header-search text-gray-700 transition-colors duration-200 hover:text-orange-600"
+            >Search</a
           >
           <a
             href="#"
-            class="header-login cursor-pointer pl-3 hover:underline focus:underline"
-            >login</a
+            class="header-login text-gray-700 transition-colors duration-200 hover:text-orange-600"
+            >Login</a
           >
         </div>
       </header>
       <nav
         id="nav"
-        class="mb-4 mt-24 flex items-center px-8 font-bold uppercase"
+        class="mb-6 mt-24 flex items-center px-8 text-sm text-gray-500"
       >
-        <a href="#" class="text-sm">main dishes</a>
-        <p class="px-4 text-gray-600">></p>
-        <a href="#" class="text-sm">pasta</a>
-        <p class="px-4 text-gray-600">></p>
-        <a href="#" class="text-sm">lasagna recipes</a>
-        <p class="px-4 text-gray-600">></p>
-        <a href="#" class="text-sm">meat lasagna recipes</a>
+        <a href="#" class="transition-colors duration-200 hover:text-orange-600"
+          >Main Dishes</a
+        >
+        <span class="mx-2 text-gray-400">/</span>
+        <a href="#" class="transition-colors duration-200 hover:text-orange-600"
+          >Pasta</a
+        >
+        <span class="mx-2 text-gray-400">/</span>
+        <a href="#" class="transition-colors duration-200 hover:text-orange-600"
+          >Lasagna Recipes</a
+        >
+        <span class="mx-2 text-gray-400">/</span>
+        <a href="#" class="transition-colors duration-200 hover:text-orange-600"
+          >Meat Lasagna Recipes</a
+        >
       </nav>
-      <main id="main" class="max-w-screen-sm px-8 py-4 lg:mx-auto">
-        <header id="main-header" class="my-3">
-          <h2 class="text-5xl font-extrabold">World's Best Lasagna</h2>
+      <main id="main" class="container mx-auto max-w-3xl flex-grow px-4 py-8">
+        <header id="main-header" class="mb-8 text-center">
+          <h2 class="text-6xl font-extrabold leading-tight text-gray-800">
+            World's Best Lasagna
+          </h2>
         </header>
-        <nav id="main-nav" class="py-2 text-xs uppercase">
-          <a class="mr-2 cursor-pointer">⭐⭐⭐⭐⭐</a>
-          <strong class="click-text border-orange-500 tracking-wide">
-            <a href="#" class=""> 4.8 </a>
-          </strong>
-          <span class="font-bold text-gray-500">(20,299)</span>
-          <span class="mx-3 border-l border-gray-300"></span>
-          <strong class="click-text border-orange-500 tracking-wide">
-            <a href="#" class=""> 14,493 reviews </a>
-          </strong>
-          <span class="mx-3 border-l border-gray-300"></span>
-          <strong class="click-text border-orange-500 tracking-wide">
-            <a href="#" class=""> 2,696 photos </a>
-          </strong>
+        <nav
+          id="main-nav"
+          class="flex items-center justify-center space-x-4 py-4 text-sm"
+        >
+          <div class="flex items-center">
+            <span class="text-xl text-orange-500">⭐⭐⭐⭐⭐</span>
+            <strong class="ml-2 text-gray-700">4.8</strong>
+          </div>
+          <span class="text-gray-400">|</span>
+          <a
+            href="#"
+            class="text-gray-600 transition-colors duration-200 hover:text-orange-600"
+            >14,493 reviews</a
+          >
+          <span class="text-gray-400">|</span>
+          <a
+            href="#"
+            class="text-gray-600 transition-colors duration-200 hover:text-orange-600"
+            >2,696 photos</a
+          >
         </nav>
-        <p class="py-2 text-lg">
+        <p class="mx-auto max-w-2xl py-4 text-center text-lg text-gray-700">
           This lasagna recipe takes a little work, but it is so satisfying and
           filling that it's worth it!
         </p>
-        <article class="w-96">
-          <p class="py-1 text-sm capitalize">
-            recipe by
-            <strong class="click-text border-orange-500 capitalize">
-              <a href="#" class=""> John Chandler </a>
+        <article class="my-8 text-center">
+          <p class="text-sm text-gray-600">
+            Recipe by
+            <strong class="cursor-pointer text-orange-600 hover:underline">
+              <a href="#">John Chandler</a>
             </strong>
-            <span class="mx-3 border-l border-gray-300"></span>
-            <span class="capitalize text-gray-500"
-              >updated on August 16, 2023</span
-            >
+            <span class="mx-2">|</span>
+            <span class="text-gray-500">Updated on August 16, 2023</span>
           </p>
-          <p class="py-1 text-sm">
-            <span> 🧪 </span>
-            <span class="capitalize">tested by </span>
-            <strong class="click-text border-orange-500 capitalize">
-              <a href="#" class=""> Allrecipes Test Kitchen </a>
+          <p class="mt-1 text-sm text-gray-600">
+            <span>🧪</span> Tested by
+            <strong class="cursor-pointer text-orange-600 hover:underline">
+              <a href="#">Allrecipes Test Kitchen</a>
             </strong>
           </p>
           <div
-            class="my-2 grid h-12 grid-cols-4 rounded bg-lime-200 capitalize"
+            class="my-8 grid grid-cols-4 gap-0 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
           >
             <div
-              class="center h-full rounded-l bg-orange-500 font-bold text-white"
+              class="flex cursor-pointer flex-col items-center justify-center p-3 transition-colors duration-200 hover:bg-gray-50"
             >
-              <span
-                class="mr-1 cursor-pointer border-white hover:border-b focus:border-b"
-              >
-                <a href="#" class=""> save </a>
-              </span>
-              <span class="">❤️</span>
-            </div>
-            <div class="center font-bold">
-              <span
-                class="mr-1 cursor-pointer border-orange-500 hover:border-b focus:border-b"
-              >
-                <a href="#" class=""> rate </a>
-              </span>
-              <span class=""> ⭐ </span>
+              <span class="text-xl">❤️</span>
+              <span class="mt-1 text-xs font-medium text-gray-700">Save</span>
             </div>
             <div
-              class="center self-center border-l border-r border-gray-700 font-bold"
+              class="flex cursor-pointer flex-col items-center justify-center border-l border-r border-gray-200 p-3 transition-colors duration-200 hover:bg-gray-50"
             >
-              <span
-                class="mr-1 cursor-pointer border-orange-500 hover:border-b focus:border-b"
-              >
-                <a href="#" class=""> print </a>
-              </span>
-              <span> 🖨️ </span>
+              <span class="text-xl">⭐</span>
+              <span class="mt-1 text-xs font-medium text-gray-700">Rate</span>
             </div>
-            <div class="center font-bold">
-              <span
-                class="mr-1 cursor-pointer border-orange-500 hover:border-b focus:border-b"
-              >
-                <a href="#" class=""> share </a>
-              </span>
-              <span> ↗️ </span>
+            <div
+              class="flex cursor-pointer flex-col items-center justify-center border-r border-gray-200 p-3 transition-colors duration-200 hover:bg-gray-50"
+            >
+              <span class="text-xl">🖨️</span>
+              <span class="mt-1 text-xs font-medium text-gray-700">Print</span>
+            </div>
+            <div
+              class="flex cursor-pointer flex-col items-center justify-center p-3 transition-colors duration-200 hover:bg-gray-50"
+            >
+              <span class="text-xl">↗️</span>
+              <span class="mt-1 text-xs font-medium text-gray-700">Share</span>
             </div>
           </div>
-          <div class="my-10 bg-lime-200 p-4">
-            <div class="grid grid-cols-2 gap-6">
-              <div class="">
-                <p class="font-bold capitalize">prep time:</p>
-                <p class="">30 mins</p>
+          <div
+            class="my-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <div class="grid grid-cols-2 gap-x-6 gap-y-4">
+              <div class="flex flex-col">
+                <p class="font-bold capitalize text-gray-700">prep time:</p>
+                <p class="text-gray-600">30 mins</p>
               </div>
-              <div class="">
-                <p class="font-bold capitalize">cook time:</p>
-                <p class="">2hrs 30 mins</p>
+              <div class="flex flex-col">
+                <p class="font-bold capitalize text-gray-700">cook time:</p>
+                <p class="text-gray-600">2hrs 30 mins</p>
               </div>
-              <div class="">
-                <p class="font-bold capitalize">additional time:</p>
-                <p class="">15 mins</p>
+              <div class="flex flex-col">
+                <p class="font-bold capitalize text-gray-700">
+                  additional time:
+                </p>
+                <p class="text-gray-600">15 mins</p>
               </div>
-              <div class="">
-                <p class="font-bold capitalize">total time:</p>
-                <p class="">3 hrs 15 mins</p>
+              <div class="flex flex-col">
+                <p class="font-bold capitalize text-gray-700">total time:</p>
+                <p class="text-gray-600">3 hrs 15 mins</p>
               </div>
-              <div class="">
-                <p class="font-bold capitalize">servings:</p>
-                <p class="">12</p>
+              <div class="flex flex-col">
+                <p class="font-bold capitalize text-gray-700">servings:</p>
+                <p class="text-gray-600">12</p>
               </div>
-              <div class="">
-                <p class="font-bold capitalize"></p>
+              <div class="flex flex-col">
+                <p class="font-bold capitalize text-gray-700"></p>
                 <p class=""></p>
               </div>
             </div>
-            <p class="my-5 border-b border-gray-400"></p>
-            <span class="click-text border-orange-500">
-              <a href="#" class=""> Jump to Nutrition Facts </a>
-            </span>
+            <p class="my-6 border-b border-gray-200"></p>
+            <div class="text-center">
+              <a href="#" class="font-medium text-orange-600 hover:underline"
+                >Jump to Nutrition Facts</a
+              >
+            </div>
           </div>
-          <div class="">
-            <p class="">
+          <div class="my-8 leading-relaxed text-gray-700">
+            <p class="mb-4">
               When
-              <a
-                href="#"
-                class="click-text border-blue-500 capitalize text-blue-500"
-                >john chandler</a
+              <a href="#" class="font-medium text-blue-600 hover:underline"
+                >John Chandler</a
               >
               submitted this lasagna recipe to Allrecipes more than 20 years
               ago, he had no idea how successful it would become. One of our
               top-performing recipes of all time,
-              <span class="capitalize">world's best lasagna</span>
+              <span class="capitalize">World's Best Lasagna</span>
               racks up more than 7 millions views per year and has ranked among
               the most popular lasagna recipes on the internet for two decades.
               Unfortunately, John unexpectedly passed away at 53 years old --
-              <a href="#" class="click-text border-blue-500 text-blue-500"
+              <a href="#" class="font-medium text-blue-600 hover:underline"
                 >read all about his life and legacy here</a
               >.
             </p>
@@ -191,272 +196,326 @@
             <img
               src=""
               data-lasagna-image
-              alt="World's best Lasagna "
-              class=""
+              alt="World's best Lasagna"
+              class="h-auto w-full rounded-lg shadow-md"
             />
-            <figcaption class="text-xs uppercase text-gray-400">
+            <figcaption
+              class="mt-2 text-center text-xs uppercase text-gray-500"
+            >
               photo: allrecipes magazine
             </figcaption>
           </figure>
         </article>
-        <section class="w-96">
-          <header class="">
-            <h2 class="text-4xl font-bold capitalize">how to make lasagna</h2>
+        <section class="my-12">
+          <header class="mb-6">
+            <h2 class="text-4xl font-bold capitalize text-gray-800">
+              How to Make Lasagna
+            </h2>
           </header>
-          <p class="my-4">
+          <p class="mb-8 leading-relaxed text-gray-700">
             Making lasagna can be time-consuming, but the results are well worth
             the wait. You'll find a detailed ingredient list and step-by-step
             instructions in the recipe below, but let's go over the basics:
           </p>
-          <article class="">
-            <header class="">
-              <h3 class="text-3xl font-bold capitalize">lasagna ingredients</h3>
+          <article class="mb-10">
+            <header class="mb-4">
+              <h3 class="text-3xl font-bold capitalize text-gray-800">
+                Lasagna Ingredients
+              </h3>
             </header>
-            <p class="my-4">
+            <p class="mb-6 leading-relaxed text-gray-700">
               The Allrecipes community adores this lasagna recipe because it's
               incredibly customizable, so you can easily alter the ingredient
               list to suit your needs. If you want to stay true to the original
               recipe, though, these are the ingredients you'll need to add to
               your grocery list:
             </p>
-            <ul class="p-4">
-              <li class="relative mb-4">
-                <span class="text-2xs absolute left-0 top-0.5">🟡</span>
-                <strong class="capitalize"> meat: </strong>This super meaty
-                lasagna has sweet Italian sausage <i class="">and</i> lean
-                ground beef.
+            <ul class="list-none space-y-4 p-0">
+              <li class="relative pl-6">
+                <span class="absolute left-0 top-0.5 text-orange-500">●</span>
+                <strong class="capitalize text-gray-800">Meat: </strong>This
+                super meaty lasagna has sweet Italian sausage
+                <i class="">and</i> lean ground beef.
               </li>
-              <li class="relative mb-4">
-                <span class="text-2xs absolute left-0 top-0.5">🟡</span>
-                <strong class="capitalize"> onion and garlic: </strong>An onion
-                and two cloves of garlic are cooked with the meat to add tons of
-                flavor.
+              <li class="relative pl-6">
+                <span class="absolute left-0 top-0.5 text-orange-500">●</span>
+                <strong class="capitalize text-gray-800"
+                  >Onion and garlic: </strong
+                >An onion and two cloves of garlic are cooked with the meat to
+                add tons of flavor.
               </li>
-              <li class="relative mb-4">
-                <span class="text-2xs absolute left-0 top-0.5">🟡</span>
-                <strong class="capitalize"> tomato products: </strong>You'll
-                need a can of crushed tomatoes, two cans of tomato sauce, and
-                two cans of tomato paste.
+              <li class="relative pl-6">
+                <span class="absolute left-0 top-0.5 text-orange-500">●</span>
+                <strong class="capitalize text-gray-800"
+                  >Tomato products: </strong
+                >You'll need a can of crushed tomatoes, two cans of tomato
+                sauce, and two cans of tomato paste.
               </li>
-              <li class="relative mb-4">
-                <span class="text-2xs absolute left-0 top-0.5">🟡</span>
-                <strong class="capitalize"> sugar: </strong>Two tablespoons of
-                white sugar add subtle sweetness and enhance the flavor of the
-                sauce.
+              <li class="relative pl-6">
+                <span class="absolute left-0 top-0.5 text-orange-500">●</span>
+                <strong class="capitalize text-gray-800">Sugar: </strong>Two
+                tablespoons of white sugar add subtle sweetness and enhance the
+                flavor of the sauce.
               </li>
-              <li class="relative mb-4">
-                <span class="text-2xs absolute left-0 top-0.5">🟡</span>
-                <strong class="capitalize"> spices and seasonings: </strong>This
-                lasagna recipe is flavored with fresh parsley, dried basil
+              <li class="relative pl-6">
+                <span class="absolute left-0 top-0.5 text-orange-500">●</span>
+                <strong class="capitalize text-gray-800"
+                  >Spices and seasonings: </strong
+                >This lasagna recipe is flavored with fresh parsley, dried basil
                 leaves, salt, Italian seasoning, fennel seeds, and black pepper.
               </li>
-              <li class="relative mb-4">
-                <span class="text-2xs absolute left-0 top-0.5">🟡</span>
-                <strong class="capitalize"> lasagna noddles: </strong> Use
-                store-bought or
-                <a href="#" class="click-text border-blue-500 text-blue-500"
+              <li class="relative pl-6">
+                <span class="absolute left-0 top-0.5 text-orange-500">●</span>
+                <strong class="capitalize text-gray-800"
+                  >Lasagna noodles:
+                </strong>
+                Use store-bought or
+                <a href="#" class="font-medium text-blue-600 hover:underline"
                   >homemade lasagna noodles</a
                 >.
               </li>
-              <li class="relative mb-4">
-                <span class="text-2xs absolute left-0 top-0.5">🟡</span>
-                <strong class="capitalize"> chesses: </strong> Parmesan,
-                mozzarella, and ricotta cheese make this lasagna extra decadent.
+              <li class="relative pl-6">
+                <span class="absolute left-0 top-0.5 text-orange-500">●</span>
+                <strong class="capitalize text-gray-800">Cheeses: </strong>
+                Parmesan, mozzarella, and ricotta cheese make this lasagna extra
+                decadent.
               </li>
-              <li class="relative mb-4">
-                <span class="text-2xs absolute left-0 top-0.5">🟡</span>
-                <strong class="capitalize"> egg: </strong>An egg helps bind the
-                ricotta so it doesn't ooze out of the lasagna when you cut into
-                it.
+              <li class="relative pl-6">
+                <span class="absolute left-0 top-0.5 text-orange-500">●</span>
+                <strong class="capitalize text-gray-800">Egg: </strong>An egg
+                helps bind the ricotta so it doesn't ooze out of the lasagna
+                when you cut into it.
               </li>
             </ul>
           </article>
-          <article class="">
-            <header class="">
-              <h3 class="text-3xl font-bold capitalize">
-                how to make lasagna step-by-step
+          <article class="mb-10">
+            <header class="mb-4">
+              <h3 class="text-3xl font-bold capitalize text-gray-800">
+                How to Make Lasagna Step-by-Step
               </h3>
             </header>
-            <p class="my-4">
+            <p class="mb-6 leading-relaxed text-gray-700">
               Here's a very brief overview of what you can expect when you make
               homemade lasagna:
             </p>
-            <ul class="p-4">
-              <li class="relative mb-4">
-                <strong class="capitalize"> 1. </strong>Make the meat sauce.
+            <ul class="list-inside list-decimal space-y-2 text-gray-700">
+              <li>
+                <strong class="capitalize">Make the meat sauce.</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 2. </strong>Cook the noodles.
+              <li>
+                <strong class="capitalize">Cook the noodles.</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 3. </strong>Make the ricotta
-                mixture.
+              <li>
+                <strong class="capitalize">Make the ricotta mixture.</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 4. </strong>Layer the lasagna
-                according to the recipe instructions.
+              <li>
+                <strong class="capitalize">Layer the lasagna</strong> according
+                to the recipe instructions.
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 5. </strong>Cover with foil and
-                bake.
+              <li>
+                <strong class="capitalize">Cover with foil and bake.</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 6. </strong> Let the lasagna rest
-                before serving.
+              <li>
+                <strong class="capitalize">Let the lasagna rest</strong> before
+                serving.
               </li>
             </ul>
           </article>
 
-          <article class="">
-            <header class="">
-              <h3 class="text-3xl font-bold capitalize">
-                how to layer lasagna
+          <article class="mb-10">
+            <header class="mb-4">
+              <h3 class="text-3xl font-bold capitalize text-gray-800">
+                How to Layer Lasagna
               </h3>
             </header>
-            <p class="my-4">
+            <p class="mb-6 leading-relaxed text-gray-700">
               The detailed layering instructions can be found in the recipe
               below, but this is the order you'll follow:
             </p>
-            <ul class="p-4">
-              <li class="relative mb-4">
-                <strong class="capitalize"> 1. </strong>Meat sauce
+            <ul class="list-inside list-decimal space-y-2 text-gray-700">
+              <li>
+                <strong class="capitalize">Meat sauce</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 2. </strong>Noodles
+              <li>
+                <strong class="capitalize">Noodles</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 3. </strong>Ricotta mixture
+              <li>
+                <strong class="capitalize">Ricotta mixture</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 4. </strong>Mozzarella slices
+              <li>
+                <strong class="capitalize">Mozzarella slices</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 5. </strong>Meat sauce
+              <li>
+                <strong class="capitalize">Meat sauce</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 6. </strong>Parmesan cheese
+              <li>
+                <strong class="capitalize">Parmesan cheese</strong>
               </li>
-              <li class="relative mb-4">
-                <strong class="capitalize"> 7. </strong> Repeat the layers, then
-                top with the remaining Parmesan.
+              <li>
+                <strong class="capitalize">Repeat the layers,</strong> then top
+                with the remaining Parmesan.
               </li>
             </ul>
           </article>
         </section>
-        <section class="mt-20">
-          <header class="">
-            <h3 class="text-3xl font-bold capitalize">directions</h3>
+        <section class="my-12">
+          <header class="mb-8">
+            <h3 class="text-4xl font-bold capitalize text-gray-800">
+              Directions
+            </h3>
           </header>
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 1</h4>
-              <p class="">Gather all your ingredients.</p>
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 1
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
+                Gather all your ingredients.
+              </p>
             </header>
-            <figure class="">
+            <figure class="mt-6">
               <img
                 src=""
                 data-step-1
                 alt="Gather all your ingredients"
-                class=""
+                class="h-auto w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-xs uppercase text-gray-400">
+              <figcaption
+                class="mt-2 text-center text-xs uppercase text-gray-500"
+              >
                 photo: dotdash meredith food studios
               </figcaption>
             </figure>
           </article>
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 2</h4>
-              <p class="">
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 2
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
                 Cook sausage, ground beef, onion, and garlic in a Dutch oven
                 over medium heat until well browned.
               </p>
             </header>
-            <figure class="">
+            <figure class="mt-6">
               <img
                 src=""
                 data-step-2
                 alt="Cook sausage, ground beef, onion, and garlic"
-                class=""
+                class="h-auto w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-xs uppercase text-gray-400">
+              <figcaption
+                class="mt-2 text-center text-xs uppercase text-gray-500"
+              >
                 photo: dotdash meredith food studios
               </figcaption>
             </figure>
           </article>
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 3</h4>
-              <p class="">
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 3
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
                 Stir in crushed tomatoes, tomato sauce, tomato paste, and water.
                 Season with sugar, 2 tablespoons parsley, basil, 1 teaspoon
                 salt, Italian seasoning, fennel seeds, and pepper. Simmer,
                 covered, for about 1 1/2 hours, stirring occasionally.
               </p>
             </header>
-            <figure class="">
+            <figure class="mt-6">
               <img
                 src=""
                 data-step-3
                 alt="Cook sausage, ground beef, onion, and garlic"
-                class=""
+                class="h-auto w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-xs uppercase text-gray-400">
+              <figcaption
+                class="mt-2 text-center text-xs uppercase text-gray-500"
+              >
                 photo: dotdash meredith food studios
               </figcaption>
             </figure>
           </article>
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 4</h4>
-              <p class="">
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 4
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
                 Bring a large pot of lightly salted water to a boil. Cook
                 lasagna noodles in boiling water for 8 to 10 minutes. Drain
                 noodles, and rinse with cold water.
               </p>
             </header>
-            <figure class="">
+            <figure class="mt-6">
               <img
                 src=""
                 data-step-4
                 alt="Cook sausage, ground beef, onion, and garlic"
-                class=""
+                class="h-auto w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-xs uppercase text-gray-400">
+              <figcaption
+                class="mt-2 text-center text-xs uppercase text-gray-500"
+              >
                 photo: dotdash meredith food studios
               </figcaption>
             </figure>
           </article>
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 5</h4>
-              <p class="">
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 5
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
                 In a mixing bowl, combine ricotta cheese with egg, remaining 2
                 tablespoons parsley, and 1/2 teaspoon salt.
               </p>
             </header>
-            <figure class="">
+            <figure class="mt-6">
               <img
                 src=""
                 data-step-5
                 alt="Cook sausage, ground beef, onion, and garlic"
-                class=""
+                class="h-auto w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-xs uppercase text-gray-400">
+              <figcaption
+                class="mt-2 text-center text-xs uppercase text-gray-500"
+              >
                 photo: dotdash meredith food studios
               </figcaption>
             </figure>
           </article>
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 6</h4>
-              <p class="">Preheat the oven to 375 degrees F (190 degrees C).</p>
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 6
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
+                Preheat the oven to 375 degrees F (190 degrees C).
+              </p>
             </header>
           </article>
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 7</h4>
-              <p class="">
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 7
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
                 To assemble, spread 1 1/2 cups of meat sauce in the bottom of a
                 9x13-inch baking dish. Arrange 6 noodles lengthwise over meat
                 sauce. Spread with 1/2 of the ricotta cheese mixture. Top with
@@ -464,88 +523,111 @@
                 over mozzarella, and sprinkle with 1/4 cup Parmesan cheese.
               </p>
             </header>
-            <figure class="">
+            <figure class="mt-6">
               <img
                 src=""
                 data-step-7
                 alt="Cook sausage, ground beef, onion, and garlic"
-                class=""
+                class="h-auto w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-xs uppercase text-gray-400">
+              <figcaption
+                class="mt-2 text-center text-xs uppercase text-gray-500"
+              >
                 photo: dotdash meredith food studios
               </figcaption>
             </figure>
           </article>
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 8</h4>
-              <p class="">
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 8
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
                 Repeat layers, and top with remaining mozzarella and Parmesan
                 cheese. Cover with foil: to prevent sticking, either spray foil
                 with cooking spray or make sure the foil does not touch the
                 cheese.
               </p>
             </header>
-            <figure class="">
+            <figure class="mt-6">
               <img
                 src=""
                 data-step-8
                 alt="Cook sausage, ground beef, onion, and garlic"
-                class=""
+                class="h-auto w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-xs uppercase text-gray-400">
+              <figcaption
+                class="mt-2 text-center text-xs uppercase text-gray-500"
+              >
                 photo: dotdash meredith food studios
               </figcaption>
             </figure>
           </article>
-          over medium heat until well browned.
-
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 9</h4>
-              <p class="">
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 9
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
                 Bake in the preheated oven for 25 minutes. Remove the foil and
                 bake for an additional 25 minutes.
               </p>
             </header>
-            <figure class="">
+            <figure class="mt-6">
               <img
                 src=""
                 data-step-9
                 alt="Cook sausage, ground beef, onion, and garlic"
-                class=""
+                class="h-auto w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-xs uppercase text-gray-400">
+              <figcaption
+                class="mt-2 text-center text-xs uppercase text-gray-500"
+              >
                 photo: dotdash meredith food studios
               </figcaption>
             </figure>
           </article>
-          <article class="">
-            <header class="">
-              <h4 class="mt-14 text-2xl font-bold capitalize">step 10</h4>
-              <p class="">Rest lasagna for 15 minutes before serving.</p>
+          <article
+            class="mb-10 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <header class="mb-4">
+              <h4 class="text-2xl font-bold capitalize text-gray-800">
+                Step 10
+              </h4>
+              <p class="mt-2 leading-relaxed text-gray-700">
+                Rest lasagna for 15 minutes before serving.
+              </p>
             </header>
-            <figure class="">
+            <figure class="mt-6">
               <img
                 src=""
                 data-step-10
                 alt="Cook sausage, ground beef, onion, and garlic"
-                class=""
+                class="h-auto w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-xs uppercase text-gray-400">
+              <figcaption
+                class="mt-2 text-center text-xs uppercase text-gray-500"
+              >
                 photo: dotdash meredith food studios
               </figcaption>
             </figure>
           </article>
         </section>
       </main>
-      <footer id="footer" class="bg-white p-8">
-        <p class="text-center uppercase">
-          made with ❤️ by
+      <footer
+        id="footer"
+        class="mt-12 border-t border-gray-200 bg-white p-6 text-center text-sm text-gray-500"
+      >
+        <p class="uppercase">
+          Made by
           <a
             href="https://github.com/minhhoccode111"
-            class="click-text border-blue-500 lowercase text-blue-500"
-            >minhhoccode</a
+            class="lowercase text-blue-600 hover:underline"
+            >minhhoccode111</a
           >.
         </p>
       </footer>
